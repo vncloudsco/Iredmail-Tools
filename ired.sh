@@ -22,31 +22,31 @@ IRD="/bin/ird/iredmailcontrol"
 		echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"	
 		echo " MTDEV Manage Iredmail Control Menu  "
 		echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-		echo "1. Creates a new user"
-		echo "2. Delete a user"
-		echo "3. Update a users password"
-		echo "4. De-activate a user account"
-		echo "5. Re-activate a user account"
-		echo "6. List active user accounts"
-		echo "7. List inactive user accounts"
+		echo "1. Tao Nguoi Dung Moi"
+		echo "2. Xoa User"
+		echo "3. Thay Doi Mat Khau User"
+		echo "4. De-activate Tai Khoan"
+		echo "5. Re-activate Tai Khoan"
+		echo "6. List Cac Tai Khoan Kich Hoat "
+		echo "7. List Cac Tai Khoan Chu Kich Hoat"
 		echo "8. Lists all from the forwardings"
-		echo "9. Enables pop3 for a user account"
-		echo "10. Enables IMAP for a user account"
-		echo "11. Disables pop3 for a user account"
-		echo "12. Disables IMAP for a user account"
-		echo "13. Increases the mail box quota size"
-		echo "14. Create an alias"
-		echo "15. Add a user to an alias"
-		echo "16. Creates or updates an access policy "
-		echo "17. Remove a given alias"
+		echo "9. Kich Hoat POP3 Cho Tai Khoan"
+		echo "10. Kich Hoat IMAP Cho Tai Khoan"
+		echo "11. Cam Dung POP3 Cho Tai Khoan"
+		echo "12. Cam Dung IMAP Cho Tai Khoan"
+		echo "13. Them Dung Luong Cho Tai Khoan"
+		echo "14. Tao Mail alias"
+		echo "15. Them Mail alias"
+		echo "16. Tao Va Cap Nhap policy "
+		echo "17. Xoa Mail alias"
 		echo "18. Set an alias as active"
 		echo "19. Set an alias as inactive"
-		echo "20. Check if a given email address is an alias"
-		echo "21. List any configured forwards"
-		echo "22. Deletes mail forwarding from a given address"
-		echo "23. Forward mail from one user account to another"
+		echo "20. Kiem tra email co la alias hay khong"
+		echo "21. Liet Ke configured forwards"
+		echo "22. Xoa mail forwarding Tu Dia Chi Email"
+		echo "23. Chuyen Toan BO Mail Tu User1=>User2"
 		echo "24. List if any addresses are set to forward to a given address"
-		echo "25. List if any addresses are set to forward fromm a given address"
+		echo "25. List if any addresses are set to forward from a given address"
 		echo "26. Disables mail forwarding from a given address to another entered address"
 		echo "27. Updates the domain wide mailbox quota"
 		echo "28. Enables a domain in the database, must exist already"
@@ -65,14 +65,12 @@ IRD="/bin/ird/iredmailcontrol"
 		case $choice in
 
 			1 ) 
-				sh $IRD/create-new-user.sh
+				sh $IRD/create-new-user.sh $user
 				echo "Nhap tai khoan và mat khau"
 				read user
-				sh create-new-user.sh $user
 				;;
 
 			2 ) 
-				sh $IRD/remove-user.sh
 				echo "nhap user"
 				read remove
 				sh $IRD/remove-user.sh $remove
