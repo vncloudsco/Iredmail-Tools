@@ -65,25 +65,31 @@ IRD="/bin/ird/iredmailcontrol"
 		case $choice in
 
 			1 ) 
-				sh $IRD/create-new-user.sh $user
-				echo "Nhap tai khoan và mat khau"
+				echo "Nhap tai khoan can tao"
 				read user
+				echo "Mat Khau Cho User"
+				read mk
+				sh $IRD/create-new-user.sh $user $mk
 				;;
 
 			2 ) 
-				echo "nhap user"
+				echo "Nhap Ten User@domain Cần Xóa"
 				read remove
 				sh $IRD/remove-user.sh $remove
 				;;
 			3 ) 
 				echo "nhap user can updates"
 				read user
-				sh $IRD/update-account-password.sh $user
+				echo "Nhap Mat Khau Moi Cho $user"
+				read mk
+				sh $IRD/update-account-password.sh $user $mk
 				;;
 
 			4 ) 
-				echo "nhap user"
-				read user
+				echo "Nhap User Can Cam Mail Forwarding Tu User"
+				read user1
+				echo "Nhap User Can Cam Mail Forwarding Toi User"
+				read user1
 				sh $IRD/disable-mail-forwarding.sh $user
 				;;
 
