@@ -80,160 +80,160 @@ IRD="/bin/ird/iredmailcontrol"
 			3 ) 
 				echo "nhap user can updates"
 				read user
-				sh $IRD/update-account-password.sh
+				sh $IRD/update-account-password.sh $user
 				;;
 
 			4 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/disable-mail-forwarding.sh
+				sh $IRD/disable-mail-forwarding.sh $user
 				;;
 
 			5 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/disable-mail-forwarding.sh
+				sh $IRD/disable-mail-forwarding.sh $user
 				;;
 			6 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/list-active-accounts.sh
+				sh $IRD/list-active-accounts.sh $user
 				;;
 			7 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/list-inactive-accounts.sh
+				sh $IRD/list-inactive-accounts.sh $user
 				;;
 			8 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/list-all-but-regular-accounts.sh	
+				sh $IRD/list-all-but-regular-accounts.sh $user
 				;;
 			9 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/enable-pop3-for-user.sh
+				sh $IRD/enable-pop3-for-user.sh $user
 				;;
 			10 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/enable-imap-for-user.sh
+				sh $IRD/enable-imap-for-user.sh $user
 				;;
 			11 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/disable-pop3-for-user.sh
+				sh $IRD/disable-pop3-for-user.sh $user
 				;;
 			12 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/disable-imap-for-user.sh
+				sh $IRD/disable-imap-for-user.sh $user
 				;;
 			13 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/increase-mailbox-quota.sh
+				sh $IRD/increase-mailbox-quota.sh $user
 				;;
 			14 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/create-alias.sh
+				sh $IRD/create-alias.sh $user
 				;;
 			15 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/add-user-to-alias.sh
+				sh $IRD/add-user-to-alias.sh $user
 				;;
 			16 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/create-alias-policy.sh
+				sh $IRD/create-alias-policy.sh $user
 				;;
 			17 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/remove-alias.sh
+				sh $IRD/remove-alias.sh $user
 				;;
 			18 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/set-alias-active.sh
+				sh $IRD/set-alias-active.sh $user
 				;;
 			19 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/set-alias-inactive.sh
+				sh $IRD/set-alias-inactive.sh $user
 				;;
 			20 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/is-address-an-alias.sh
+				sh $IRD/is-address-an-alias.sh $user
 				;;
 			21 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/list-forwarding.sh
+				sh $IRD/list-forwarding.sh $user
 				;;
 			22 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/remove-forwarding.sh
+				sh $IRD/remove-forwarding.sh $user
 				;;
 			23 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/add-mail-forward.sh
+				sh $IRD/add-mail-forward.sh $user
 				;;
 			24 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/is-forward-to.sh
+				sh $IRD/is-forward-to.sh $user
 				;;
 			25 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/is-forward-from.sh
+				sh $IRD/is-forward-from.sh $user
 				;;
 			26 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/disable-mail-forwarding.sh
+				sh $IRD/disable-mail-forwarding.sh $user
 				;;
 			27 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/update-domain-quota.sh
+				sh $IRD/update-domain-quota.sh $user
 				;;
 			28 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/enable-domain.sh
+				sh $IRD/enable-domain.sh $user
 				;;
 			29 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/disable-domain.sh
+				sh $IRD/disable-domain.sh $user
 				;;
 			30 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/	list-top-10-mailbox.sh	
+				sh $IRD/	list-top-10-mailbox.sh $user	
 				;;
 			31 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/list-largest-to-smallest-mailbox.sh
+				sh $IRD/list-largest-to-smallest-mailbox.sh $user
 				;;
 			32 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/update-storagenode.sh
+				sh $IRD/update-storagenode.sh $user
 				;;
 
 			33 ) 
 				echo "nhap user"
 				read user
-				sh $IRD/update-storagebasedirectory.sh
+				sh $IRD/update-storagebasedirectory.sh $user
 				;;
 			34 ) exit 0;;
 
